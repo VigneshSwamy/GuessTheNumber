@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess The Number</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body class="text-center">
+    <!-- <nav class="navbar navbar-dark bg-light">      
+        <a class="navbar-brand" href="#">Guess The Number</a>
+    </nav> -->
+    <main>
+      <h1 class="banner p-3">Guess The Number</h1>
+      <p>Number should be between 1 to 100</p>
+      <h2>Let's Play !</h2>
+      <div class="form-group">
+        <input
+          id="number-guess"
+          class="form-control form-control-lg"
+          type="number"
+          placeholder="What's your guess?"
+          onkeyup="EnableDisable(this)"
+        />
+      </div>
+      <div id="result">
+        <!-- This is where the result will be-->
+      </div>
+      <button
+        type="button"
+        id="number-submit"
+        class="btn btn-lg btn-success"
+        disabled="disabled"
+      >
+        Check Me
+      </button>
+      &nbsp;&nbsp;
+      <button type="button" id="restart-game" class="btn btn-lg btn-danger">
+        Restart
+      </button>
+      <div id="history">
+        <!-- This is where the guess history will be-->
+      </div>
+      <div class="footer">
+        <p>Made with ❤️ by Vignesh Swamy Aka (Viswa)</p>
+      </div>
+    </main>
+  </body>
+</html>
